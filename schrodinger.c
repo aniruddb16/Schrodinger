@@ -11,11 +11,11 @@ int main()
 	const double h = 6;//626070040e-34; //Planck's Constant
 	const double P = 3;//141592653589793238; 
 	int i;
+	int j;
 	
 	//Potential Energy Operator
 	for(i=0;i<del_x;i++)
 	{
-        int j;
 		for(j=0;j<del_x;j++)
 		{
 			if(i == j)
@@ -35,9 +35,8 @@ int main()
 	
 	//Kinetic Energy operator
 
-	for(i;i<del_x;i++)
+	for(i=0;i<del_x;i++)
 	{
-		int j;
 		{
 			for(j=0; j<del_x; j++)
 			{
@@ -59,10 +58,9 @@ int main()
 	
 	//ADDING T AND V
 	
-	for (i; i < del_x; i++)
+	for (i=0; i < del_x; i++)
 	{
 	
-	int j;
         for (j=0; j < del_x; j++) {
             H[i][j] = T[i][j] + V[i][j];
             printf("%f", H[i][j]);
