@@ -2,13 +2,13 @@
 int main()
 {
 	//Potential Energy Matrix
-	int del_x =5, i=0, j=0, mass=1, omega=1, x=1;
+	int del_x =5, mass=1, omega=1, x=1;
 	
 	double V[20][20];
 	
-	for(i;i<del_x;i++)
+	for(int i=0;i<del_x;i++)
 	{
-		for(j;j<del_x;j++)
+		for(int j=0;j<del_x;j++)
 		{
 			if(i == j)
 			{
